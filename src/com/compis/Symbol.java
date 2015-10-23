@@ -9,6 +9,11 @@ public class Symbol {
 	}
 	
 	@Override
+	public String toString() {
+		return symbol;
+	}
+	
+	@Override
 	public boolean equals(Object obj) {
 		if (obj == null) {
 	        return false;

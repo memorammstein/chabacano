@@ -1,5 +1,7 @@
 package com.compis;
 
+import java.util.Arrays;
+
 public class Transition {
 	
 	private Symbol from = null;
@@ -20,6 +22,11 @@ public class Transition {
 	
 	public Symbol[] getTo() {
 		return to;
+	}
+	
+	@Override
+	public String toString() {
+		return "from: " + from + " to: " + Arrays.toString(to);
 	}
 
 }
